@@ -10,7 +10,6 @@
 	<body>
 		<h1>Fancify my Text</h1>
 		
-
 		<!-- Your UI controls go here -->
 		<fieldset>
 			<legend>Text</legend>
@@ -19,16 +18,18 @@
 
 		<fieldset>
 			<legend>Fancify</legend>
-			<button id="bigger-btn">Bigger!</button>
+			<button id="bigger-btn" onclick="biggerButtonClick()">Bigger!</button>
 			<br>
-			<input type="radio" name="style" id="fancy-radio" value="fancy">
-			<label for="fancy-radio">FancyShmancy</label>
+			<!--On change to allow text change when clicked-->
+			<input type="radio" name="style" id="fancy-radio" value="fancy" onchange="styleRadioChanged()"> 
+				<label for="fancy-radio">FancyShmancy</label>
 			<br>
-			<input type="radio" name="style" id="boring-radio" value="boring">
-			<label for="boring-radio">BoringBetty</label>
+			<!--On change to allow text change when clicked-->
+			<input type="radio" name="style" id="boring-radio" value="boring" onchange="styleRadioChanged()">
+				<label for="boring-radio">BoringBetty</label>
 		</fieldset>
 
-
+		<button id="moo-btn" onclick="mooButtonClick()">Moo</button>
 
 	</body>
 </html>
