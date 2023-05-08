@@ -26,5 +26,9 @@ function biggerButtonClick() {
     text = sentences.join("-Moo.");
     textArea.value = text;
   }
+
+  function MainPage() {
+    location.href = "index.html"
+  }
   
   
